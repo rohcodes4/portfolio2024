@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Clickfunnels 404 Error</title><script>window.Attribution = window.Attribution || [], window.Attribution.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "group", "track", "ready", "alias", "page", "once", "off", "on"], window.Attribution.factory = function (a) { return function () { var b = Array.prototype.slice.call(arguments); return b.unshift(a), window.Attribution.push(b), window.Attribution } }; for (var key, i = 0; i < window.Attribution.methods.length; i++)key = window.Attribution.methods[i], window.Attribution[key] = window.Attribution.factory(key); window.Attribution.load = function () { if (!document.getElementById("attribution-js")) { var a = document.createElement("script"); a.type = "text/javascript", a.id = "attribution-js", a.async = !0, a.src = "//scripts.attributionapp.com/attribution.js"; var b = document.getElementsByTagName("script")[0]; b.parentNode.insertBefore(a, b) } }, window.Attribution.load(), window.Attribution.projectId = "9niB7iZv", Attribution.ready(function () { var a = ["108tests.com","10xdocumentary.com","10xsecrets.com","10xsecretsmastery.com","12monthmillionaire.com","2commaclub.com","5dayleadchallenge.com","actioneticsmd.com","affiliatebootcamp.com","affiliates.dotcomsecrets.com","andrew.funnelbuildersecrets.com","api.clickfunnels.com","app.clickfunnels.com","brickandmortarfunnels.com","carla.funnelbuildersecrets.com","carolin.funnelbuildersecrets.com","carolina.funnelbuildersecrets.com","categorykingcouncil.com","cfcertified.com","cfgoesviral.com","cfstart.com","cfstartupstory.com","cfsuccess.com","clickfunnelschristmas.com","clickfunnelsradio.com","clickfunnelsstudios.com","clickfunnelssyndicate.com","copyquickstartsecrets.com","copywritingsecrets.com","dcsbookscripts.com","deathofawebsite.com","diehardfunnelhacker.com","dotcomsecrets.com","dotcomsecretsbook.com","dotcomsecretslabs.com","doubleyourreading.com","dream100secrets.com","ecommfunnelsecrets.com","esbookscripts.com","expertsecrets.com","expertsecretsmasterclass.com","fhlstory.com","fillyourfunnel.com","followupfunnels.com","freefunnelkickstart.com","freelancersecrets.com","funnelbuildersecrets.com","funnelcatcher.com","funnelchallenge.com","funnelcookbook.com","funnelflix.com","funnelfridays.com","funnelgiveaway.clickfunnels.com","funnelgraffiti.com","funnelhackathon.com","funnelhacker.tv","funnelhackerscookbook.com","funnelhacking.com","funnelhackinglive.com","funnelhackingsecrets.com","funnelhackingtelethon.com","funnelimages.com","funnelimmersion.com","funnelology.com","funnelrolodex.com","funnels.moldingmillionaires.com","funnelscripts.com","funnelstackingsecrets.com","funnelstories.com","funnelswag.com","funnelu.clickfunnels.com","funnelu.com","funnelwebclass.com","go.marketingsecrets.com","go.mirokredit.de","go.mirokreditag.de","goto.clickfunnels.com","highticketsecrets.com","ignite.clickfunnels.com","igniteyourfunnel.com","iloveclickfunnels.com","imallin.com","innercircleforlife.com","invisiblefunnelsecrets.com","ipaintsquirrels.com","jay.funnelbuildersecrets.com","jodeen.funnelbuildersecrets.com","joshua.funnelbuildersecrets.com","ladybossmovement.com","leadfunnels.com","liberateandeducate.org","listbuildingsecrets.com","login.trafficsecrets.com","marketinginyourcar.com","marketingsecrets.com","membershipsitefunnelscrets.com","membershipsitefunnelsecrets.com","michael.funnelbuildersecrets.com","mike.funnelbuildersecrets.com","nameyour.business","natalie.funnelbuildersecrets.com","nate.funnelbuildersecrets.com","networkmarketingsecrets.com","ofaplatinum.com","ofascripts.com","ofastory.com","onefunnelaway.com","onefunnelawaychallenge.com","order.millennialsecrets.co","pages.marketingsecrets.com","perfectwebinarsecrets.com","platinumsneakpeek.com","rachel.funnelbuildersecrets.com","scarcityfunnels.com","scripts.mastermind.com","secondupline.com","secretfunnelstrategy.com","secretsmasterclass.com","secretsmastermind.com","secretstrilogy.com","secretwebinarhacks.com","snapfunnels.com","starstorysolutionsecrets.com","stats.clickfunnels.com","stats.clickfunnels.com","stephen.funnelbuildersecrets.com","summit.dotcomsecrets.com","summit.expertsecrets.com","summit.trafficsecrets.com","themarketingsecretsblackbook.com","trafficsecrets.com","trafficsecretsevent.com","trafficsecretsmasterclass.com","trafficsecretsscripts.com","trafficworkshop.com","tripwiresecrets.com","twocommaclub.com","twocommaclubcoaching.com","twocommaclublive.com","twocommaclubx.com","unfairadvantage.com","unlockthesecrets.com","upgradenow.com","urgencyfunnels.com","virtualhackathons.com","vsl.millennialsecrets.co","webclass.clickfunnels.com","webinar.funnelscripts.com","webinarblueprint.com","whatsyourmorningroutine.com","whichstep.com","www.30days.com","www.clickfunnels.com","www.entrepreneurnews.com","www.login.trafficsecrets.com","www.moldingmillionaires.com","www.russellbrunson.com","yourfuturechallenge.com"], b = new URL(window.location.href), c = b.searchParams.get("anonymous_id"); c ? Attribution.user().anonymousId(c) : c = Attribution.user().anonymousId(), Attribution.page(); for (var d, e = document.body.getElementsByTagName("a"), f = 0; f < e.length; f++) { d = e[f].getAttribute("href"); try { var g = new URL(d); if (g.hostname != b.hostname && -1 < a.indexOf(g.hostname)) { var h = d + (-1 < d.indexOf("?") ? "&" : "?") + "anonymous_id=" + c; e[f].setAttribute("href", h) } else; } catch (a) { } } });</script>
+<link rel="stylesheet" href="https://assets.clickfunnels.com/templates/master-cf-template/css/master-cf.css">
+<link href="https://assets.clickfunnels.com/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+  .error-block{
+    width: 600px;
+    margin: 20px auto;
+    background:white;
+    padding: 20px;
+    line-height: 26px;
+    font-family: ubuntu, sans-serif;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  a{
+    color: #3498da;
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body style="background:#eee;">
+  <br>
+  <br>
+  <br>
+  <p style="text-align:center;">
+    <img src="/images/logo-cf-large.png" alt="">
+  </p>
+
+  <div class="error-block">
+    <p><b>The page you were looking for doesn&#39;t exist.</b></p>
+    <p>You may have mistyped the address or the page may have moved.</p>
+
+    <p>If you believe this page should be here, there might be more information on our <a href="http://status.clickfunnels.com" target="_blank">status page</a> </p>
+  </div>
+<script id="IntercomSettingsScriptTag">
+//<![CDATA[
+window.intercomSettings = {"app_id":"cd5b8e754b483e4da362c711225e9d2298ed6e06","widget":{"activator":"#IntercomDefaultWidget"},"hide_default_launcher":true};(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cd5b8e754b483e4da362c711225e9d2298ed6e06';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()
+//]]>
+</script>
+</body>
+</html>
+

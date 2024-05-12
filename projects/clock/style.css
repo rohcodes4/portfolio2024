@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f363e;
+}
+
+.container{
+    position: relative;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-top-left-radius: 225px;
+    border-top-right-radius: 225px;
+    background: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0,0,00.75),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+
+.clock{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: #2f363e;
+    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock::before{
+    content:'';
+    position: absolute;
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index:100000;
+    background: #2f363e;
+}
+
+.clock span{
+    position: absolute;
+    inset: 20px;
+    text-align: center;
+    transform: rotate( calc( 30deg * var(--i) ) );
+}
+
+.clock span b{
+    font-size: 2em;
+    font-weight: 600;
+    color:rgba(256, 256, 256, 0.5);
+    display: inline-block;
+    transform: rotate( calc( -30deg * var(--i) ) );
+}
+
+.circle{
+    position: absolute; 
+    border: 2px solid rgba(0,0,0,0.25);
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+}
+
+.circle2{
+    width: 240px;
+    height: 240px;
+    z-index: 9;
+}
+
+.circle3{
+    width: 180px;
+    height: 180px;
+    z-index: 8;
+
+}
+
+.circle i{
+    position: absolute;
+    width:6px;
+    height: 50%;
+    background-color: var(--clr);
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+}
+
+.circle:nth-child(1) i{
+    width: 2px;
+}
+
+.circle:nth-child(2) i{
+    width: 6px;
+}
+
+.circle::before{
+    content: '';
+    position: absolute;
+    top:-8.5px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px var(--clr),
+                0px 0px 60px var(--clr);
+    animation: blinkShadow 2s infinite;
+    transition: box-shadow 0.5s ease;
+
+    
+}
+
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 600;
+    border: 2px solid rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    margin: 20px 0 40px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+
+#time div{
+    position: relative;
+    width: 60px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--clr);
+}
+
+#time div:nth-child(1)::after,
+#time div:nth-child(2)::after{
+    content: ':';
+    position: absolute;
+    right: -2px;
+    top:-1px;
+}
+
+#time div:last-child{
+    font-size: 0.5em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+}
+
+#time div:nth-child(2)::after{
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes blinkShadow {
+    0%,100%{
+        opacity:1
+    }
+    50%{
+        box-shadow: initial;
+    }
+}
+
+.clock, #time{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media(max-width:767px){
+    .clock{
+        width:65vw;
+        height:65vw;
+    }
+
+    .circle{
+        width:40vw;
+        height:40vw;
+    }
+    
+    .circle2{
+        width:30vw;
+        height:30vw;
+    }
+    
+    .circle3{
+        width:20vw;
+        height:20vw;
+    }
+
+    .clock span b{
+        font-size:1em;
+    }   
+
+    .circle::before{
+        width: 0.5em;
+        height: 0.5em;
+        top: -0.3em;
+    }
+
+    #time{
+        font-size:1.3em;
+    }
+
+    #time div{
+        width:40px
+    }
+}
