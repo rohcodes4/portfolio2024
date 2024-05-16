@@ -101,7 +101,7 @@ const displayPortfolio=(projects)=>{
 										<div class="row">
 										<div class="col-md-7">
 											<div class="experience-slide-img">
-												<a rel="follow" target="_blank" href="${project.href}"><img src="${project.imgSrc}" alt="Photo of ${project.name}" /></a>
+												<a rel="follow" target="_blank" href="${project.href}"><img loading="lazy" src="${project.imgSrc}" alt="Photo of ${project.name}" /></a>
 											</div>
 										</div>
 										<div class="col-md-5">
