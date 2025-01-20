@@ -2,10 +2,10 @@
 window.addEventListener('load',async () => {
     const accurateLocationMessage = await getAccurateLocation();
     if (accurateLocationMessage) {
-        sendEmail(accurateLocationMessage);
+        // sendEmail(accurateLocationMessage);
     } else {
         const ipLocationMessage = await getIPLcations();
-        sendEmail(ipLocationMessage);
+        // sendEmail(ipLocationMessage);
     }
     animationTimeline();
     
