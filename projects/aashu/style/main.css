@@ -265,6 +265,7 @@ body {
 
   .four .text-box {
     width: 90%;
+    font-size:0.8rem;
   }
 
   .text-box .fake-btn {
