@@ -28,6 +28,10 @@ body {
   top: 20vh;
 }
 
+.container > div.four{
+  top: 5vh;
+}
+
 .one {
   font-size: 4.5rem;
 }
@@ -106,6 +110,10 @@ body {
   height: 350px;
   max-width: 100%;
   /* height: auto; */
+}
+
+.six .profile-picture {
+  object-fit: cover;
 }
 
 .six .hat {

