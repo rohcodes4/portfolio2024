@@ -26,11 +26,11 @@ const animationTimeline = () => {
     const hbd = document.getElementsByClassName("wish-hbd")[0];
 
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-        .split(" ")
+        .split("")
         .join("</span><span>")}</span>`;
 
     hbd.innerHTML = `<span>${hbd.innerHTML
-        .split("")
+        .split(" ")
         .join("</span><span>")}</span>`;
 
     const ideaTextTrans = {
