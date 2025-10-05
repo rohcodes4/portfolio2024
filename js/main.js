@@ -121,7 +121,7 @@ const displayPortfolio=(projects)=>{
 
 
 
-	if(pathname=="/" || pathname=="/index"||pathname=="/index.html"||pathname=="/portfolio2.0/"){
+	if(pathname=="/" || pathname=="/index"||pathname=="/index.html"||pathname=="/portfolio2.0/"||pathname=="/portfolio2024/"){
 		displayPortfolio(projectsData)
     // Enable below lines to render blog posts 
 		// latestBlogJSON=findLatestThreePosts(blogData)
