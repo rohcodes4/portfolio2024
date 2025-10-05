@@ -164,7 +164,7 @@ const projectsData = [
     {
         id: 5,
         name: "SVM Electronics",
-        href: "https://rohitparakh.github.io/svm-react",
+        href: "https://rohcodes4.github.io/svm-react",
         imgSrc: "images/work/svm-react.webp",
         description: "LG Retail Showroom",
         category: "React Development"
@@ -188,7 +188,7 @@ const projectsData = [
     {
         id: 2,
         name: "Youtube Clone",
-        href: "https://rohitparakh.github.io/rohit-ytc",
+        href: "https://rohcodes4.github.io/rohit-ytc",
         imgSrc: "images/work/ytc.webp",
         description: "Youtube clone made using Youtube Data API v3",
         category: "React Development"
